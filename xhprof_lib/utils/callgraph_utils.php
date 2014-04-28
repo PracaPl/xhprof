@@ -535,7 +535,7 @@ function xhprof_generate_dot_script($raw_data, $runData, $threshold, $source, $p
 					"\t" . sprintf('Excl. %10s (%.1f%%)', $info['exclMu'], $info['exclMuPercent']) . PHP_EOL .
 					'"';
 			} else {
-				$toolTip = ', tooltip="' . addslashes($symbol);
+				$toolTip = ', tooltip="' . addslashes($symbol) . '"';
 			}
 		} else {
 			if (isset($left[$symbol]) && isset($right[$symbol])) {
